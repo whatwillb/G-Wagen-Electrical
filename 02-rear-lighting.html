@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page 2 - Rear lighting</title><link rel="stylesheet" href="styles.css"></head><body><header class="top"><div class="inner"><strong>2009 G55 AMG Diagnostic Guide</strong><div class="nav"><a href="index.html">Home</a><a href="01-electrical.html">1. Electrical</a><a href="02-rear-lighting.html">2. Rear Lighting</a><a href="03-transfer-case.html">3. Transfer Case</a><a href="04-road-test.html">4. Road Test</a><a href="05-transmission-service.html">5. Service</a><a href="06-decision.html">6. Decision</a></div></div></header><main class="wrap page">
+<h1>Page 2: Rear lighting and rear SAM</h1>
+<p class="sub">Your report shows right-rear lamp faults and rear SAM undervoltage. Get the rear lighting back to a known-good incandescent baseline before chasing module faults.</p>
+<div class="grid two">
+  <figure class="card"><img class="media" src="assets/tail_lights_w461.png" alt="W461 style amber outer tail lights"><figcaption>Your amber-outer classic tail-light style.</figcaption></figure>
+  <div class="card"><svg class="diagram" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+<rect x="70" y="90" width="320" height="150" rx="18" fill="#111827" stroke="#94a3b8" stroke-width="3"/>
+<rect x="80" y="100" width="95" height="130" fill="#f59e0b" opacity=".9"/>
+<rect x="175" y="100" width="145" height="130" fill="#dc2626" opacity=".9"/>
+<rect x="320" y="100" width="60" height="130" fill="#7f1d1d" opacity=".9"/>
+<text x="128" y="260" fill="#fde68a" text-anchor="middle" font-size="18">Turn signal</text>
+<text x="248" y="260" fill="#fecaca" text-anchor="middle" font-size="18">Brake / tail</text>
+<text x="350" y="260" fill="#fca5a5" text-anchor="middle" font-size="18">Fog or reverse*</text>
+<circle cx="128" cy="165" r="18" fill="#fff"/><text x="128" y="171" font-size="12" text-anchor="middle">P21W</text>
+<circle cx="248" cy="165" r="18" fill="#fff"/><text x="248" y="171" font-size="12" text-anchor="middle">P21/5W</text>
+<circle cx="350" cy="165" r="18" fill="#fff"/><text x="350" y="171" font-size="12" text-anchor="middle">P21W</text>
+<text x="540" y="120" fill="#f8fafc" font-size="24" font-weight="700">Temporary diagnostic reset</text>
+<text x="540" y="160" fill="#cbd5e1" font-size="18">1. Put all rear bulbs back to incandescent.</text>
+<text x="540" y="195" fill="#cbd5e1" font-size="18">2. Inspect bulb holders and lamp connectors.</text>
+<text x="540" y="230" fill="#cbd5e1" font-size="18">3. Inspect rear lamp grounds.</text>
+<text x="540" y="265" fill="#cbd5e1" font-size="18">4. Clear rear SAM codes and rescan.</text>
+<text x="540" y="315" fill="#94a3b8" font-size="15">* On these classic housings, the third bulb is side-dependent.</text>
+</svg></div>
+</div>
+<section class="card" style="margin-top:18px">
+  <h2>Bulbs to use for diagnostic reset</h2>
+  <div class="parts">
+    <div class="part">
+      <h3>Brake / tail bulb</h3>
+      <svg class="diagram" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg"><ellipse cx="120" cy="55" rx="42" ry="46" fill="#fde68a"/><rect x="92" y="92" width="56" height="48" rx="10" fill="#9ca3af"/><circle cx="104" cy="148" r="6" fill="#d1d5db"/><circle cx="136" cy="148" r="6" fill="#d1d5db"/><line x1="110" y1="20" x2="110" y2="90" stroke="#f59e0b" stroke-width="3"/><line x1="130" y1="20" x2="130" y2="90" stroke="#f59e0b" stroke-width="3"/></svg>
+      <p><strong>P21/5W</strong> (often cross-referenced as 1157)</p>
+      <p class="small">Use in the brake / tail position.</p>
+    </div>
+    <div class="part">
+      <h3>Turn signal bulb</h3>
+      <svg class="diagram" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg"><ellipse cx="120" cy="55" rx="42" ry="46" fill="#f59e0b"/><rect x="92" y="92" width="56" height="48" rx="10" fill="#9ca3af"/><circle cx="120" cy="148" r="6" fill="#d1d5db"/><line x1="120" y1="20" x2="120" y2="90" stroke="#f8fafc" stroke-width="3"/></svg>
+      <p><strong>P21W</strong> (often cross-referenced as 1156)</p>
+      <p class="small">Use in the amber turn-signal position.</p>
+    </div>
+    <div class="part">
+      <h3>Fog / reverse bulb</h3>
+      <svg class="diagram" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg"><ellipse cx="120" cy="55" rx="42" ry="46" fill="#f8fafc"/><rect x="92" y="92" width="56" height="48" rx="10" fill="#9ca3af"/><circle cx="120" cy="148" r="6" fill="#d1d5db"/><line x1="120" y1="20" x2="120" y2="90" stroke="#f59e0b" stroke-width="3"/></svg>
+      <p><strong>P21W</strong> (often cross-referenced as 1156)</p>
+      <p class="small">Use in the third bulb position on each side.</p>
+    </div>
+  </div>
+</section>
+<section class="grid two" style="margin-top:18px">
+  <div class="card">
+    <h2>Step-by-step</h2>
+    <ol class="steps">
+      <li>Temporarily remove any rear LED bulbs and reinstall incandescent bulbs in all affected rear positions.</li>
+      <li>Inspect bulb holders for heat damage, loose contacts, and corrosion.</li>
+      <li>Inspect the tail-light harness connectors and nearby rear ground points.</li>
+      <li>Clear rear SAM codes.</li>
+      <li>Rescan and note which lamp codes come back immediately.</li>
+    </ol>
+  </div>
+  <div class="card checklist">
+    <h2>Checklist</h2>
+    <label><input type="checkbox"> All rear bulbs set back to incandescent</label>
+    <label><input type="checkbox"> Bulb holders inspected</label>
+    <label><input type="checkbox"> Tail-light connectors inspected</label>
+    <label><input type="checkbox"> Rear ground points inspected</label>
+    <label><input type="checkbox"> Rear SAM codes cleared</label>
+    <label><input type="checkbox"> Immediate-return lamp faults documented</label>
+  </div>
+</section>
+<div class="next"><a class="btn secondary" href="01-electrical.html">← Previous</a><a class="btn" href="03-transfer-case.html">Next →</a></div></main></body></html>

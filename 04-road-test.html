@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page 4 - Road test</title><link rel="stylesheet" href="styles.css"></head><body><header class="top"><div class="inner"><strong>2009 G55 AMG Diagnostic Guide</strong><div class="nav"><a href="index.html">Home</a><a href="01-electrical.html">1. Electrical</a><a href="02-rear-lighting.html">2. Rear Lighting</a><a href="03-transfer-case.html">3. Transfer Case</a><a href="04-road-test.html">4. Road Test</a><a href="05-transmission-service.html">5. Service</a><a href="06-decision.html">6. Decision</a></div></div></header><main class="wrap page">
+<h1>Page 4: Road test and live-data interpretation</h1>
+<p class="sub">This page is for confirming whether the rumble is torque-converter clutch shudder. Your own live-data screenshot already points strongly in that direction.</p>
+<div class="grid two">
+  <figure class="card"><img class="media" src="assets/scanner_menu_1.jpeg" alt="Scanner menu with torque converter lockup options"><figcaption>Useful PIDs: on/off ratio, speed difference of lockup clutch, and status of lock-up clutch.</figcaption></figure>
+  <figure class="card"><img class="media" src="assets/scanner_tcc_live.jpeg" alt="Live data showing lock-up clutch slipping"><figcaption>During your symptom event at about 40 mph, the scanner showed <strong>status: SLIPPING</strong> and a <strong>65 rpm speed difference</strong>.</figcaption></figure>
+</div>
+<section class="grid two" style="margin-top:18px">
+  <div class="card">
+    <h2>How to run the test</h2>
+    <ol class="steps">
+      <li>Warm up the vehicle fully.</li>
+      <li>Select these PIDs: actual gear, on/off ratio of torque-converter lock-up, speed difference of lockup clutch, status of lock-up clutch, and transmission temp if available.</li>
+      <li>Drive at about 40–60 mph on a flat road with light steady throttle.</li>
+      <li>When the rumble happens, note the lock-up status and speed difference.</li>
+      <li>For extra confirmation, lightly tap the brake with your left foot to force unlock. If the rumble disappears immediately, that strongly supports TCC shudder.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h2>How to read the result</h2>
+    <table class="table">
+      <tr><th>Reading</th><th>Interpretation</th></tr>
+      <tr><td><span class="ok">Locked, 0–20 rpm slip</span></td><td>Normal</td></tr>
+      <tr><td><span class="warn">Slipping, 50+ rpm during rumble</span></td><td>Strong evidence of torque-converter clutch shudder</td></tr>
+      <tr><td>Rumble disappears when brake tap forces unlock</td><td>Extra confirmation of TCC involvement</td></tr>
+      <tr><td>No change in TCC slip but rumble persists</td><td>Pivot back toward driveline / transfer-case investigation</td></tr>
+    </table>
+    <div class="callout">Your screenshot showing <strong>gear 5</strong>, <strong>65 rpm speed difference</strong>, and <strong>lock-up status = SLIPPING</strong> during the rumble is a strong hit for torque-converter clutch shudder.</div>
+  </div>
+</section>
+<section class="card checklist" style="margin-top:18px">
+  <h2>Checklist</h2>
+  <label><input type="checkbox"> Vehicle fully warmed up</label>
+  <label><input type="checkbox"> Correct transmission PIDs selected</label>
+  <label><input type="checkbox"> Symptom recreated at cruising speed</label>
+  <label><input type="checkbox"> Lock-up status recorded during rumble</label>
+  <label><input type="checkbox"> Speed difference recorded during rumble</label>
+  <label><input type="checkbox"> Brake-tap unlock test tried</label>
+</section>
+<div class="next"><a class="btn secondary" href="03-transfer-case.html">← Previous</a><a class="btn" href="05-transmission-service.html">Next →</a></div></main></body></html>

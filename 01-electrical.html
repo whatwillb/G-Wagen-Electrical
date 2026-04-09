@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page 1 - Electrical baseline</title><link rel="stylesheet" href="styles.css"></head><body><header class="top"><div class="inner"><strong>2009 G55 AMG Diagnostic Guide</strong><div class="nav"><a href="index.html">Home</a><a href="01-electrical.html">1. Electrical</a><a href="02-rear-lighting.html">2. Rear Lighting</a><a href="03-transfer-case.html">3. Transfer Case</a><a href="04-road-test.html">4. Road Test</a><a href="05-transmission-service.html">5. Service</a><a href="06-decision.html">6. Decision</a></div></div></header><main class="wrap page">
+<h1>Page 1: Electrical baseline</h1>
+<p class="sub">Even with a new battery and alternator, bad grounds, poor cable connections, or voltage drop can still trigger undervoltage and CAN faults. Start here.</p>
+<div class="grid two">
+  <div class="card"><svg class="diagram" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#f59e0b"/></marker></defs>
+<rect x="28" y="60" width="170" height="90" rx="14" fill="#1f2937" stroke="#64748b"/>
+<text x="113" y="95" fill="#f8fafc" text-anchor="middle" font-size="24" font-weight="700">Battery</text>
+<text x="113" y="125" fill="#cbd5e1" text-anchor="middle" font-size="16">Check posts and clamps</text>
+<circle cx="54" cy="105" r="8" fill="#ef4444"/><text x="70" y="111" fill="#fecaca" font-size="16">B+</text>
+<circle cx="54" cy="132" r="8" fill="#22c55e"/><text x="70" y="138" fill="#bbf7d0" font-size="16">B-</text>
+<rect x="660" y="60" width="180" height="90" rx="14" fill="#1f2937" stroke="#64748b"/>
+<text x="750" y="95" fill="#f8fafc" text-anchor="middle" font-size="24" font-weight="700">Alternator</text>
+<text x="750" y="125" fill="#cbd5e1" text-anchor="middle" font-size="16">Check B+ lead and case ground</text>
+<rect x="342" y="180" width="210" height="100" rx="16" fill="#1f2937" stroke="#64748b"/>
+<text x="447" y="220" fill="#f8fafc" text-anchor="middle" font-size="24" font-weight="700">Engine / Chassis</text>
+<text x="447" y="250" fill="#cbd5e1" text-anchor="middle" font-size="16">Inspect main ground strap</text>
+<circle cx="390" cy="310" r="16" fill="#22c55e"/><text x="418" y="316" fill="#bbf7d0" font-size="16">Ground point</text>
+<rect x="650" y="320" width="180" height="90" rx="14" fill="#1f2937" stroke="#64748b"/>
+<text x="740" y="352" fill="#f8fafc" text-anchor="middle" font-size="24" font-weight="700">Rear SAM / rear body</text>
+<text x="740" y="380" fill="#cbd5e1" text-anchor="middle" font-size="16">Check rear lamp grounds</text>
+<line x1="198" y1="105" x2="660" y2="105" stroke="#f59e0b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="113" y1="150" x2="390" y2="294" stroke="#22c55e" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="750" y1="150" x2="510" y2="180" stroke="#f59e0b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="510" y1="280" x2="690" y2="320" stroke="#22c55e" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="240" y="90" fill="#fbbf24" font-size="15">Measure charging voltage here</text>
+<text x="210" y="205" fill="#86efac" font-size="15">Do voltage-drop tests on ground paths</text>
+</svg></div>
+  <div class="card">
+    <h2>Target readings</h2>
+    <table class="table">
+      <tr><th>Test</th><th>Good target</th></tr>
+      <tr><td>Battery at rest</td><td>About 12.6 V after resting</td></tr>
+      <tr><td>Engine running</td><td>About 13.7–14.7 V</td></tr>
+      <tr><td>Ground-side voltage drop</td><td>Ideally under 0.1–0.2 V on a good path</td></tr>
+      <tr><td>Positive-side drop</td><td>Very low and stable under load</td></tr>
+    </table>
+    <div class="callout">Clear all codes only <strong>after</strong> you inspect and tighten the main electrical connections. Then rescan and note what comes back immediately.</div>
+  </div>
+</div>
+<section class="grid two" style="margin-top:18px">
+  <div class="card">
+    <h2>Step-by-step</h2>
+    <ol class="steps">
+      <li>Fully charge the new battery.</li>
+      <li>Measure voltage at the battery posts with the engine off.</li>
+      <li>Measure again at idle, then at 1,500–2,000 rpm, then with lights and blower on.</li>
+      <li>Disconnect battery negative before cleaning grounds.</li>
+      <li>Check and clean: battery terminals, main body ground, engine-to-chassis strap, alternator B+ lead, rear-body grounds.</li>
+      <li>Reconnect, then do voltage-drop tests under load.</li>
+      <li>Clear all codes and rescan. Write down what returns immediately.</li>
+    </ol>
+  </div>
+  <div class="card checklist">
+    <h2>Checklist</h2>
+    <label><input type="checkbox"> Battery fully charged</label>
+    <label><input type="checkbox"> Resting voltage recorded</label>
+    <label><input type="checkbox"> Running voltage recorded</label>
+    <label><input type="checkbox"> Main grounds cleaned and tightened</label>
+    <label><input type="checkbox"> Rear body grounds checked</label>
+    <label><input type="checkbox"> Voltage-drop test results written down</label>
+    <label><input type="checkbox"> All codes cleared and fresh rescan saved</label>
+  </div>
+</section>
+<div class="next"><a class="btn secondary" href="index.html">← Previous</a><a class="btn" href="02-rear-lighting.html">Next →</a></div></main></body></html>
